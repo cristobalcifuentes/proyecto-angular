@@ -19,6 +19,10 @@ import { AngularFireAuthModule} from '@angular/fire/auth';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {FormsModule} from '@angular/forms'
 import { ClienteService } from './servicios/cliente.service';
+import { LoginService } from './servicios/login.service';
+import { AuthGuard } from './guards/auth.guard';
+import { ConfiguracionService } from './servicios/configuracion.service';
+import { RegistroGuard } from './guards/registro.guard';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,8 @@ import { ClienteService } from './servicios/cliente.service';
     FormsModule,
     FlashMessagesModule.forRoot()
   ],
-  providers: [ClienteService, AngularFirestore],
+  providers: [ClienteService, AngularFirestore, LoginService, AuthGuard,
+     ConfiguracionService, RegistroGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

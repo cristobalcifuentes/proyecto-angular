@@ -19,9 +19,9 @@ export class ClientComponent implements OnInit {
     saldo: 0
   }
 
-  @ViewChild("clienteForm") clienteForm: NgForm;
+  @ViewChild("clienteForm", {static: false}) clienteForm: NgForm;
 
-  @ViewChild("botonCerrar") botonCerrar: ElementRef;
+  @ViewChild("botonCerrar", {static: false}) botonCerrar: ElementRef;
 
   constructor(private clienteServicio: ClienteService, private flashMessages: FlashMessagesService) { }
 
