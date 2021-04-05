@@ -12,7 +12,10 @@ export const environment = {
     messagingSenderId: "443638195830",
     appId: "1:443638195830:web:4dfbc69ca99b86fa5ae157",
     measurementId: "G-FJG88VJBB1"
-  }
+  },
+  URL_BASE: "index.php/ws/",
+  URL_ENDPOINT_ALL: "getLocales",
+  URL_ENDPOINT_TURNO: "getLocalesTurnos"
 };
 
 /*

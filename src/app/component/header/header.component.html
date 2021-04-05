@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
   <div class="container">
-    <a routerLink="/" class="navbar-brand">control</a>
+    <a routerLink="/" class="navbar-brand">Inicio</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
       <span class="navbar-togler-icon"> <i class="fas fa-bars"></i> </span>
     </button>
@@ -9,7 +9,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul *ngIf="isLoggedIn" class="navbar-nav">
         <li class="nav-item px-2">
-          <a routerLink="/" class="nav-link">inicio</a>
+          <a routerLink="/clientes" class="nav-link">Clientes</a>
+        </li>
+      </ul>
+
+      <ul *ngIf="isLoggedIn" class="navbar-nav">
+        <li class="nav-item px-2">
+          <a routerLink="/farmacias/listado" class="nav-link">Farmacias</a>
         </li>
       </ul>
 

@@ -1,8 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { FlashMessagesService } from 'angular2-flash-messages';
-import { Cliente } from 'src/app/modelo/cliente.model';
-import { ClienteService } from 'src/app/servicios/cliente.service';
+import { Cliente } from 'src/app/clientes-module/modelo/cliente.model';
+import { ClienteService } from 'src/app/clientes-module/servicios/cliente.service';
 
 @Component({
   selector: 'app-client',

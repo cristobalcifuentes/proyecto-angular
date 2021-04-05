@@ -1,0 +1,56 @@
+<section id="clientes">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header">
+            <h4>Listado de Farmacias</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Nombre</th>
+                <th>Comuna</th>
+                <th>Direccion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let farmacia of farmacias; let i = index">
+                <td>{{farmacia.local_nombre}} </td>
+                <td>{{farmacia.comuna_nombre}}</td>
+                <td>{{farmacia.local_direccion}}</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card link text-center bg-danger text-white mb-3" >
+          <a routerLink="/farmacias/turno">
+          <div class="card-body">
+
+            <h3> Farmacias de turno </h3>
+            <h4 class="display-4">
+              {{farmaciasTurno?.length}}
+            </h4>
+
+          </div>
+        </a>
+        </div>
+
+        <div class="card link text-center bg-success text-white mb-3" >
+          <a routerLink="/farmacias/listado">
+          <div class="card-body">
+            <h3> Total farmacias</h3>
+            <h4 class="display-4">
+              <i class="fas fa-users"></i> {{farmacias?.length}}
+            </h4>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

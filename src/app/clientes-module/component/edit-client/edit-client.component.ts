@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FlashMessagesService } from 'angular2-flash-messages';
-import { Cliente } from 'src/app/modelo/cliente.model';
-import { ClienteService } from 'src/app/servicios/cliente.service';
+import { Cliente } from 'src/app/clientes-module/modelo/cliente.model';
+import { ClienteService } from 'src/app/clientes-module/servicios/cliente.service';
 
 @Component({
   selector: 'app-edit-client',
