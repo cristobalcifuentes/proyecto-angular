@@ -31,7 +31,7 @@
             <tbody>
               <tr *ngFor="let cliente of clientes; let i = index">
                 <td>{{i+1}} </td>
-                <td>{{cliente.nombre}} {{cliente.apellido}}</td>
+                <td>{{cliente.nombre | primeraMayuscula}} {{cliente.apellido | primeraMayuscula}}</td>
                 <td>{{cliente.saldo | currency: 'CLP': '$'}}</td>
                 <td>
                   <a routerLink="/clientes/edit/{{cliente.id}}" class="btn btn-secondary">

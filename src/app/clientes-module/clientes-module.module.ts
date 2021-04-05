@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { clientesRoutingModule } from './clientes-routing.module';
+import { PrimeraMayusculaPipe } from '../pipe/primera-mayuscula.pipe';
 
 
 
@@ -17,7 +18,8 @@ import { clientesRoutingModule } from './clientes-routing.module';
   declarations: [
     TableComponent,
     ClientComponent,
-    EditClientComponent
+    EditClientComponent,
+    PrimeraMayusculaPipe
   ],
   imports: [
     CommonModule,
