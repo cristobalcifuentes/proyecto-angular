@@ -1,1 +1,14 @@
-<p>padre works!</p>
+<h1>home component</h1>
+<h3>Nombre =
+{{nombre}}</h3>
+
+
+
+
+<input type="text" class="form-control" placeholder="Escriba su nombre"
+[(ngModel)]='nombre'>
+
+
+<hr>
+<app-hijo [nombreHijo]="nombre"
+ (cambioNombreHijo) = "nombre = $event"></app-hijo>
